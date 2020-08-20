@@ -2,8 +2,12 @@ import React from "react";
 
 import "./button.styles.scss";
 
-const Button = () => {
-  return <div className="button">Button</div>;
+const Button = ({ buttonText }) => {
+  return (
+    <div className="button">
+      <button>{buttonText}</button>
+    </div>
+  );
 };
 
 export default Button;

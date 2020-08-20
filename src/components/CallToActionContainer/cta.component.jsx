@@ -4,11 +4,12 @@ import Button from "../Button/button.component";
 
 import "./cta.styles.scss";
 
-const CallToActionContainer = () => {
+const CallToActionContainer = ({ title, text, buttonText }) => {
   return (
     <div className="cta">
-      Call To Action
-      <Button />
+      <h3 className="cta-title">{title}</h3>
+      <p className="cta-text">{text}</p>
+      <Button buttonText={buttonText} />
     </div>
   );
 };

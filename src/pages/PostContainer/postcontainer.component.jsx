@@ -21,7 +21,13 @@ const PostContainer = () => {
         caption={`In optics, violet is a spectral color: It refers to the color of any different single wavelength of light on the short wavelength end of the visible spectrum, between approximately 380 and 450 nanometers.`}
       />
       <CardContainer />
-      <CallToActionContainer />
+      <CallToActionContainer
+        title={"Teft?"}
+        text={
+          "As a result, when violet light strikes the eye, the S-cone is stimulated strongly and the L-cone is stimulated weakly."
+        }
+        buttonText={"Why teft?"}
+      />
     </div>
   );
 };

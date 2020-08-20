@@ -6,6 +6,9 @@ import image1 from "../../assets/card-images/1.svg";
 import image2 from "../../assets/card-images/2.svg";
 import image3 from "../../assets/card-images/3.svg";
 
+import left from "../../assets/arrows/left.svg";
+import right from "../../assets/arrows/right.svg";
+
 import "./cardcontainer.styles.scss";
 
 const CardContainer = () => {
@@ -35,6 +38,7 @@ const CardContainer = () => {
 
   return (
     <div className="cardcontainer">
+      <img src={left} alt="left arrow" />
       {cards.map((card) => (
         <Card
           key={card.title}
@@ -44,6 +48,7 @@ const CardContainer = () => {
           text={card.text}
         />
       ))}
+      <img src={right} alt="right arrow" />
     </div>
   );
 };

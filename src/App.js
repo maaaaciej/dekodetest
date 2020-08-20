@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Header />
       <Switch>
-        <Route path="/articles/" component={PostContainer} />
+        <Route path="/teft/circles/purple-circles" component={PostContainer} />
         <Route path="*" exact component={NotFound} />
       </Switch>
       <Footer />

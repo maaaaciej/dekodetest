@@ -6,6 +6,8 @@ import ImageContainer from "../../components/ImageContainer/imagecontainer.compo
 import CardContainer from "../../components/CardContainer/cardcontainer.component";
 import CallToActionContainer from "../../components/CallToActionContainer/cta.component";
 
+import ocean from "../../assets/ocean/ocean.png";
+
 import "./postcontainer.styles.scss";
 
 const PostContainer = () => {
@@ -13,7 +15,11 @@ const PostContainer = () => {
     <div>
       <SiteMap />
       <TitleContainer />
-      <ImageContainer />
+      <ImageContainer
+        image={ocean}
+        excerpt={`“The process of making the dye was long, difficult and expensive”`}
+        caption={`In optics, violet is a spectral color: It refers to the color of any different single wavelength of light on the short wavelength end of the visible spectrum, between approximately 380 and 450 nanometers.`}
+      />
       <CardContainer />
       <CallToActionContainer />
     </div>

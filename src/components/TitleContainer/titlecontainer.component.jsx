@@ -4,7 +4,7 @@ import ProfileCard from "../ProfileCard/profilecard.component";
 
 import "./titlecontainer.styles.scss";
 
-import avatar from "./avatar.png";
+import avatar from "../../assets/avatar/avatar.png";
 
 const TitleContainer = ({ title, ingress }) => {
   return (

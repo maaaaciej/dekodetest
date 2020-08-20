@@ -2,6 +2,12 @@
 
 <hr>
 
+### A few words about React
+
+Fordeler
+Ulemper
+Hvordan løse ulempene
+
 ### Set-up instructions
 
 To run and test the application, start by installing all of the dependencies with <b>npm install</b>.
@@ -19,3 +25,15 @@ This application was developed with three main areas of focus.
 I try to stay as much away from hard-coding as possible. The components are built to be reused anywhere, anytime, hence all of the information being passed as props, rather than being hard-coded in.
 
 #### Readability
+
+#### Scalability
+
+Skriv om hvordan du approachet prosessen
+
+### The utility functions
+
+oversikt over funksjoner som rendering basert på sosiale medier, hamburgere, karuseller
+
+### Component Overview
+
+### Summary

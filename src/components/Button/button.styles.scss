@@ -1,0 +1,27 @@
+@use "../../index.scss" as global;
+
+.button {
+  .button-button {
+    font-family: Circular Std Book;
+    background: #ffffff;
+    border: 2px solid global.$main-purple;
+    box-sizing: border-box;
+    padding: 12px 24px;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+
+  .button-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #719ece;
+    transition: background-color 0.3s ease;
+    background: #e7bfff;
+  }
+  .button-button:hover {
+    transition: background-color 0.3s ease;
+    background: #e7bfff;
+  }
+  .button-button {
+    border: 2px solid global.$main-purple;
+  }
+}

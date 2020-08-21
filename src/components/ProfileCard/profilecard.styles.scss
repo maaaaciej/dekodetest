@@ -19,6 +19,7 @@
     justify-content: space-between;
     .profilecard-container-name {
       color: global.$main-purple;
+      font-size: 1.2em;
       margin: 0;
     }
     .profilecard-container-text {
@@ -28,7 +29,7 @@
     .profilecard-container-socials {
       .profilecard-container-socials-link {
         img {
-          padding-right: 3%;
+          padding-right: 4%;
         }
       }
     }

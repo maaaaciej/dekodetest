@@ -37,6 +37,11 @@ const data = {
       title: "As a result",
       text: `As a result, when violet light strikes the eye, the S-cone is stimulated strongly and the L-cone is stimulated weakly. Accordingly, strong blue light mixed with weaker red light can mimic this pattern of stimulation, causing humans to perceive colors that the same hue as violet, but with lower saturation.`,
     },
+    fourthParagraph: {
+      title: "Teft?",
+      text:
+        "As a result, when violet light strikes the eye, the S-cone is stimulated strongly and the L-cone is stimulated weakly.",
+    },
   },
   cardCarousel: [
     {
@@ -61,12 +66,7 @@ const data = {
         "In optics, violet is a spectral color: It refers to the color of any different single wavelength of light on the short wavelength end of the visible spectrum.",
     },
   ],
-  callToAction: {
-    title: "Teft?",
-    text:
-      "As a result, when violet light strikes the eye, the S-cone is stimulated strongly and the L-cone is stimulated weakly.",
-    buttonText: "Why teft?",
-  },
+  buttonText: "Why teft?",
   imageContainer: {
     image: ocean,
     excerpt: `“The process of making the dye was long, difficult and expensive”`,

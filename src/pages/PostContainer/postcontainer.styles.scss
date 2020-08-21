@@ -1,0 +1,32 @@
+//The main colors, as well as link classes are defined in the index file.
+
+@use "../../index.scss" as global;
+
+.postcontainer {
+  font-family: Circular Std Book;
+  .postcontainer-paragraph {
+    width: 42%;
+    padding: 1.5% 0% 3% 0%;
+    line-height: 32px;
+    font-size: 1.2em;
+    margin: auto;
+
+    a {
+      @extend .links;
+      text-decoration: underline;
+      color: global.$main-purple;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+  }
+  .postcontainer-title {
+    width: 42%;
+    margin: auto;
+    font-size: 1.4rem;
+  }
+
+  .postcontainer-button {
+    text-align: center;
+  }
+}

@@ -7,12 +7,12 @@ import "./sitemap.styles.scss";
 const SiteMap = () => {
   return (
     <div className="sitemap">
-      <a href="" className="sitemap-link">
+      <a href="https://www.dekode.no" className="sitemap-link">
         teft
       </a>
       <img src={forward} alt="" />
 
-      <a href="" className="sitemap-link">
+      <a href="https://www.dekode.no" className="sitemap-link">
         Circles
       </a>
       <img src={forward} alt="" />

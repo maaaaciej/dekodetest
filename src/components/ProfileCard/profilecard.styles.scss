@@ -1,0 +1,36 @@
+//The main colors, as well as link classes are defined in the index file.
+
+@use "../../index.scss" as global;
+
+.profilecard {
+  width: 80%;
+  margin-top: 4%;
+  font-family: Circular Std Book;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  justify-content: center;
+  .profilecard-container {
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    .profilecard-container-name {
+      color: global.$main-purple;
+      margin: 0;
+    }
+    .profilecard-container-text {
+      color: global.$main-black;
+      font-size: 0.6rem;
+    }
+    .profilecard-container-socials {
+      .profilecard-container-socials-link {
+        img {
+          padding-right: 3%;
+        }
+      }
+    }
+  }
+}

@@ -13,7 +13,7 @@
     margin: auto;
 
     a {
-      @extend .links;
+      font-family: Circular Std Book;
       text-decoration: underline;
       color: global.$main-purple;
     }

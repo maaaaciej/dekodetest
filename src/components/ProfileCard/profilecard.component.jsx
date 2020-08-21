@@ -6,27 +6,23 @@ import twitter from "../../assets/socials/twitter.svg";
 
 import "./profilecard.styles.scss";
 
-const ProfileCard = ({
-  avatar,
-  readtime,
-  name,
-  date,
-  position,
-  socialsLinks,
-}) => {
+const ProfileCard = ({ author }) => {
+  const { avatar, readtime, name, date, position, socials } = author;
   return (
     <div className="profilecard">
       <img src={avatar} alt={`${name}`} />
-      <span className="profilecard-text">{`${name}`}</span>
-      <p className="profilecard-text">{`${position} - ${readtime} min read - ${date}`}</p>
+      <span className="profilecard-text">{`${name || "Name"}`}</span>
+      <p className="profilecard-text">{`${position || "Position"} - ${
+        readtime || "Readtime"
+      } min read - ${date || "21/08/2020"}`}</p>
       <span className="profilecard-socials">
-        <a href={socialsLinks[2]} className="profilecard-socials-link">
+        <a href={socials[2]} className="profilecard-socials-link">
           <img src={twitter} alt="" />
         </a>
-        <a href={socialsLinks[1]} className="profilecard-socials-link">
+        <a href={socials[1]} className="profilecard-socials-link">
           <img src={instagram} alt="" />
         </a>
-        <a href={socialsLinks[0]} className="profilecard-socials-link">
+        <a href={socials[0]} className="profilecard-socials-link">
           <img src={facebook} alt="" />
         </a>
       </span>

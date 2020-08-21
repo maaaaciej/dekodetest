@@ -7,7 +7,7 @@ const ImageContainer = ({ excerpt, image, caption }) => {
     <div className="imagecontainer">
       <div className="imagecontainer-excerpt">{excerpt || "Excerpt"}</div>
       <img src={image} alt={caption} className="imagecontainer-image" />
-      <div className="imagecontainer-caption">{caption}</div>
+      <div className="imagecontainer-caption">{caption || "Image Caption"}</div>
     </div>
   );
 };

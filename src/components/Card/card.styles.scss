@@ -1,0 +1,27 @@
+//The index.scss-file holds the color-variables
+@use "../../index.scss" as global;
+
+.card {
+  font-family: Circular Std Book;
+  width: 27.4%;
+  display: flex;
+  flex-direction: column;
+
+  .card-image {
+    width: 71.8%;
+    object-fit: contain;
+    align-self: center;
+  }
+  .card-title {
+    font-size: 1.4rem;
+    color: global.$main-purple;
+    margin: 0.5em 0;
+  }
+  .card-date {
+    font-size: 0.75em;
+    color: #707070;
+  }
+  .card-text {
+    line-height: 1.5em;
+  }
+}

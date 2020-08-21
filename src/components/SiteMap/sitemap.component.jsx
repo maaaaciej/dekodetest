@@ -1,5 +1,6 @@
 import React from "react";
-import { ReactComponent as Forward } from "./forward.svg";
+
+import forward from "../../assets/forward/forward.svg";
 
 import "./sitemap.styles.scss";
 
@@ -9,13 +10,14 @@ const SiteMap = () => {
       <a href="" className="sitemap-link">
         teft
       </a>
-      <Forward />
+      <img src={forward} alt="" />
+
       <a href="" className="sitemap-link">
         Circles
       </a>
-      <Forward />
+      <img src={forward} alt="" />
 
-      <a className="sitemap-link">Purple Circles</a>
+      <span className="sitemap-current">Purple Circles</span>
     </div>
   );
 };

@@ -1,0 +1,18 @@
+//The main colors are defined in the index file.
+
+@use "../../index.scss" as global;
+
+.titlecontainer {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  .titlecontainer-title {
+    font-family: Circular Std Book;
+    font-weight: 550;
+    font-size: 3rem;
+  }
+  .titlecontainer-ingress {
+    font-family: Circular Std Italic;
+    font-weight: lighter;
+  }
+}

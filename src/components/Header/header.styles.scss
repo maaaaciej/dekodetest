@@ -1,4 +1,12 @@
-//Pull the flex-rules out into a variable, they are repeated three times here.
+//The main colors, as well as link classes are defined in the index file.
+
+@use "../../index.scss" as global;
+
+.display-rules {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .header {
   background: #ffffff;
@@ -7,26 +15,18 @@
   display: flex;
   align-items: center;
 
-  font-family: Circular Std;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 24px;
-  color: #262626;
+  @extend .links;
+  color: global.$main-black;
 
   .header-container {
     width: 84%;
     margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @extend .display-rules;
 
     .header-container-nav {
       height: 55%;
       width: 42%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @extend .display-rules;
 
       .header-container-nav-logo {
         height: 100%;
@@ -36,7 +36,7 @@
         text-decoration: none;
       }
       .header-container-nav-link:visited {
-        color: #262626;
+        color: global.$main-black;
       }
       .header-container-nav-link:hover {
         text-decoration: underline;
@@ -44,9 +44,7 @@
     }
     .header-container-search {
       cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @extend .display-rules;
 
       .header-container-search-icon {
         margin-left: 8%;

@@ -1,3 +1,19 @@
+//The main colors, as well as link classes are defined in the index file.
+
+@use "../../index.scss" as global;
+
 .sitemap {
-  margin-bottom: 1%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .sitemap-link {
+    @extend .links;
+    color: global.$main-purple;
+  }
+  .sitemap-current {
+    @extend .links;
+    color: global.$main-black;
+  }
 }

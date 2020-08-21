@@ -1,7 +1,29 @@
+$main-purple: #8500d7;
+$main-black: #262626;
+
+.links {
+  font-family: Circular Std Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
 @font-face {
-  font-family: "Circular Std";
+  font-family: "Circular Std Bold";
   src: local("Circular"),
     url(./assets/fonts/CircularStdBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Circular Std Book";
+  src: local("Circular"),
+    url(./assets/fonts/CircularStdBook.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Circular Std Italic";
+  src: local("Circular"),
+    url(./assets/fonts/CircularStdItalic.ttf) format("truetype");
 }
 
 body {

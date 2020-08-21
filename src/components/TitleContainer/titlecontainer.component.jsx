@@ -8,7 +8,7 @@ const TitleContainer = ({ title, ingress, author }) => {
   return (
     <div className="titlecontainer">
       <h1 className="titlecontainer-title">{title || "Title"}</h1>
-      <p className="titlecontainer-ingress">{ingress || "Ingress"}</p>
+      <h2 className="titlecontainer-ingress">{ingress || "Ingress"}</h2>
       <ProfileCard author={author} />
     </div>
   );

@@ -19,21 +19,21 @@ const ProfileCard = ({ author }) => {
         <span className="profilecard-container-socials">
           <a href={socials[2]} className="profilecard-container-socials-link">
             <img
-              classname="profilecard-container-socials-link-icon"
+              className="profilecard-container-socials-link-icon"
               src={twitter}
               alt=""
             />
           </a>
           <a href={socials[1]} className="profilecard-container-socials-link">
             <img
-              classname="profilecard-container-socials-link-icon"
+              className="profilecard-container-socials-link-icon"
               src={instagram}
               alt=""
             />
           </a>
           <a href={socials[0]} className="profilecard-container-socials-link">
             <img
-              classname="profilecard-container-socials-link-icon"
+              className="profilecard-container-socials-link-icon"
               src={facebook}
               alt=""
             />

@@ -1,0 +1,32 @@
+.imagecontainer {
+  margin-bottom: 1%;
+  position: relative;
+
+  .imagecontainer-excerpt {
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    font-size: 1.5em;
+    color: #ff007a;
+    width: 42%;
+    padding: 48px;
+    background-color: #ffffff;
+    border-radius: 8px 0px 0px 8px;
+    box-shadow: 0px 4px 8px rgba(145, 158, 167, 0.32);
+    position: absolute;
+    top: 26%;
+    left: 0px;
+  }
+  .imagecontainer-image {
+    width: 62%;
+    margin: auto;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+    .imagecontainer-image-caption {
+      width: 64%;
+      padding-top: 2%;
+      font-size: 0.75em;
+    }
+  }
+}

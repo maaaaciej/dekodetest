@@ -1,0 +1,56 @@
+//The main color is defined in the index file.
+@use "../../index.scss" as global;
+
+.footer {
+  background: #ffffff;
+  height: 13%;
+  font-family: Circular Std Book;
+  font-weight: 500;
+
+  box-shadow: 4px 0px 4px #919ea740;
+  font-size: 0.75em;
+  .footer-container-logo {
+    padding: 3% 0;
+    width: 80%;
+    margin: auto;
+  }
+  .footer-container {
+    width: 80%;
+    margin-left: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      color: global.$main-purple;
+    }
+
+    .footer-container-address {
+      address {
+        font-style: normal;
+        line-height: 2em;
+      }
+      .footer-container-address-last {
+        margin-top: 20%;
+      }
+    }
+
+    .footer-container-nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+    .footer-container-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      .footer-container-links-socials {
+        display: flex;
+        justify-content: space-between;
+
+        margin-top: 35%;
+      }
+    }
+  }
+}

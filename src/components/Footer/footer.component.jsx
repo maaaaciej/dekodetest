@@ -11,41 +11,85 @@ import "./footer.styles.scss";
 const Footer = () => {
   return (
     <footer className="footer">
-      <Logo />
-      <address>Dekode AS Tlf: 23 08 00 00 E-post: info@dekode.no</address>
-      <address>Tollbugata 11 Postboks 489 Sentrum, 0105 Oslo</address>
-      <nav>
-        <a href="https://www.dekode.no" className="footer-nav-links">
-          Tjenester
-        </a>
-        <a href="https://www.dekode.no" className="footer-nav-links">
-          Produkter
-        </a>
-        <a href="https://www.dekode.no" className="footer-nav-links">
-          Kontakt
-        </a>
-        <a href="https://www.dekode.no" className="footer-nav-links">
-          Abonnement
-        </a>
-        <a href="https://www.dekode.no" className="footer-nav-links">
-          Logg Inn
-        </a>
-      </nav>
-      <div className="footer-links">
-        <a href="https://www.dekode.no" className="footer-links-link">
-          Personvernerklæring
-        </a>
-        <a href="https://www.dekode.no" className="footer-links-link">
-          Cookies
-        </a>
-        <a href="https://www.dekode.no" className="footer-links-link">
-          Language: ENG (US)
-        </a>
+      <div className="footer-container-logo">
+        <Logo />
       </div>
-      <div className="footer-socials">
-        <img src={twitter} alt="twitter" />
-        <img src={instagram} alt="instagram" />
-        <img src={facebook} alt="facebook" />
+      <div className="footer-container">
+        <div className="footer-container-address">
+          <address>
+            <p className="footer-container-address-line">Dekode AS</p>
+            <p className="footer-container-address-line">Tlf: 23 08 00 00</p>
+            <p className="footer-container-address-line">
+              E-post: info@dekode.no
+            </p>
+          </address>
+
+          <address className="footer-container-address-last">
+            <p className="footer-container-address-line">Tollbugata 11, Oslo</p>
+            <p className="footer-container-address-line">
+              Postboks 489 Sentrum, 0105 Oslo
+            </p>
+          </address>
+        </div>
+
+        <nav className="footer-container-nav">
+          <a
+            href="https://www.dekode.no"
+            className="footer-container-nav-links"
+          >
+            Tjenester
+          </a>
+          <a
+            href="https://www.dekode.no"
+            className="footer-container-nav-links"
+          >
+            Produkter
+          </a>
+          <a
+            href="https://www.dekode.no"
+            className="footer-container-nav-links"
+          >
+            Kontakt
+          </a>
+          <a
+            href="https://www.dekode.no"
+            className="footer-container-nav-links"
+          >
+            Abonnement
+          </a>
+          <a
+            href="https://www.dekode.no"
+            className="footer-container-nav-links"
+          >
+            Logg Inn
+          </a>
+        </nav>
+        <div className="footer-container-links">
+          <a
+            href="https://www.dekode.no"
+            className="footer-container-links-link"
+          >
+            Personvernerklæring
+          </a>
+          <a
+            href="https://www.dekode.no"
+            className="footer-container-links-link"
+          >
+            Cookies
+          </a>
+          <a
+            href="https://www.dekode.no"
+            className="footer-container-links-link"
+          >
+            Language: ENG (US)
+          </a>
+
+          <div className="footer-container-links-socials">
+            <img src={twitter} alt="twitter" />
+            <img src={instagram} alt="instagram" />
+            <img src={facebook} alt="facebook" />
+          </div>
+        </div>
       </div>
     </footer>
   );

@@ -9,7 +9,7 @@
 
   box-shadow: 4px 0px 4px #919ea740;
   font-size: 0.75em;
-  .footer-container-logo {
+  .footer-logo {
     padding: 3% 0;
     width: 80%;
     margin: auto;
@@ -50,6 +50,43 @@
         justify-content: space-between;
 
         margin-top: 35%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .footer {
+    .footer-logo {
+      width: 90%;
+      padding-top: 10%;
+    }
+
+    .footer-container {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      .footer-container-address {
+        .footer-container-address-last {
+          margin-top: 10%;
+        }
+      }
+
+      .footer-container-nav,
+      .footer-container-links {
+        a {
+          margin-top: 1.5em;
+        }
+
+        .footer-container-links-socials {
+          width: 90%;
+          margin: 10% auto;
+          justify-content: start;
+          img {
+            margin-left: -5%;
+            margin-right: 10%;
+          }
+        }
       }
     }
   }

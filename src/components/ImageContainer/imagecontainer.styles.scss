@@ -1,5 +1,5 @@
 .imagecontainer {
-  margin-bottom: 1%;
+  margin-bottom: 2%;
   position: relative;
 
   .imagecontainer-excerpt {
@@ -9,7 +9,7 @@
     font-size: 1.6vw;
     color: #ff007a;
     width: 42%;
-    padding: 48px;
+    padding: 3em;
     background-color: #ffffff;
     border-radius: 8px 0px 0px 8px;
     box-shadow: 0px 4px 8px rgba(145, 158, 167, 0.32);
@@ -28,6 +28,23 @@
       width: 64%;
       padding-top: 2%;
       font-size: 0.75em;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .imagecontainer {
+    margin-bottom: 10%;
+    .imagecontainer-image {
+      width: 95%;
+      margin: auto auto auto 5%;
+      .imagecontainer-image-caption {
+        width: 95%;
+      }
+    }
+    .imagecontainer-excerpt {
+      font-size: 1em;
+      padding: 1.5em;
+      top: 18%;
     }
   }
 }

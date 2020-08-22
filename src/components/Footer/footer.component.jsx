@@ -11,7 +11,7 @@ import "./footer.styles.scss";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-container-logo">
+      <div className="footer-logo">
         <Logo />
       </div>
       <div className="footer-container">

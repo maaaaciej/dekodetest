@@ -11,7 +11,7 @@
     padding: 1.5% 0% 3% 0%;
     line-height: 32px;
     font-size: 1.2em;
-    margin: auto;
+    margin: 2% auto;
 
     a {
       font-family: Circular Std Book;
@@ -30,5 +30,14 @@
 
   .postcontainer-button {
     text-align: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .postcontainer {
+    .postcontainer-paragraph,
+    .postcontainer-title {
+      margin: 5% auto;
+      width: 90%;
+    }
   }
 }

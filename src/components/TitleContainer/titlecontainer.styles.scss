@@ -10,12 +10,22 @@
 
     font-family: Circular Std Book;
     font-weight: 550;
-    font-size: 3rem;
+    font-size: 3em;
   }
   .titlecontainer-ingress {
     text-align: center;
-
     font-family: Circular Std Italic;
     font-weight: lighter;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .titlecontainer {
+    width: 90%;
+    .titlecontainer-title {
+      font-size: 2em;
+    }
+    .titlecontainer-ingress {
+      font-size: 1.5em;
+    }
   }
 }

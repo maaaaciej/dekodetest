@@ -54,7 +54,7 @@
     }
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .footer {
     .footer-logo {
       width: 90%;
@@ -82,7 +82,7 @@
           width: 90%;
           margin: 10% auto;
           justify-content: start;
-          img {
+          a {
             margin-left: -5%;
             margin-right: 10%;
           }

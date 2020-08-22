@@ -1,3 +1,4 @@
+//Main colors in the index.scss-file
 @use "../../index.scss" as global;
 
 .button {
@@ -5,23 +6,38 @@
     font-family: Circular Std Book;
     background: #ffffff;
     border: 2px solid global.$main-purple;
+    color: global.$main-black;
     box-sizing: border-box;
     padding: 12px 24px;
     box-sizing: border-box;
     border-radius: 8px;
   }
-
-  .button-button:focus {
-    outline: none;
+  $button-background: #e7bfff;
+  $disabled-color: #c9c9c9;
+  %box-shadow-rules {
     box-shadow: 0 0 5px #719ece;
-    transition: background-color 0.3s ease;
-    background: #e7bfff;
   }
-  .button-button:hover {
-    transition: background-color 0.3s ease;
-    background: #e7bfff;
-  }
+
   .button-button {
     border: 2px solid global.$main-purple;
+  }
+  .button-button:disabled {
+    border: 2px solid $disabled-color;
+    color: $disabled-color;
+  }
+  .button-button:focus:enabled {
+    @extend %box-shadow-rules;
+    outline: none;
+    background: $button-background;
+  }
+  .button-button:active:enabled {
+    @extend %box-shadow-rules;
+    transition: background-color 0.3s ease;
+    border: 2px double global.$main-purple;
+    background: $button-background;
+  }
+  .button-button:hover:enabled {
+    transition: background-color 0.3s ease;
+    background: $button-background;
   }
 }

@@ -21,6 +21,7 @@
   .header-container {
     width: 84%;
     margin: auto;
+
     @extend .display-rules;
 
     .header-container-menu {
@@ -56,13 +57,35 @@
     }
   }
 }
+.mobile-header {
+  width: 100%;
+  min-height: 20vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 4px 4px rgba(145, 158, 167, 0.25);
 
-@media only screen and (max-width: 600px) {
+  .mobile-header-link {
+    padding: 5% 0;
+    width: 100%;
+    height: 33.3%;
+    text-decoration: none;
+    color: global.$main-black;
+  }
+  .mobile-header-link:hover {
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (max-width: 800px) {
   .header {
     .header-container {
       .header-container-menu {
         display: inline;
       }
+
       .header-container-nav {
         display: none;
       }

@@ -85,9 +85,15 @@ const Footer = () => {
           </a>
 
           <div className="footer-container-links-socials">
-            <img src={twitter} alt="twitter" />
-            <img src={instagram} alt="instagram" />
-            <img src={facebook} alt="facebook" />
+            <a href="https://www.twitter.com">
+              <img src={twitter} alt="twitter" />
+            </a>
+            <a href="https://www.instagram.com">
+              <img src={instagram} alt="instagram" />
+            </a>
+            <a href="https://www.facebook.com">
+              <img src={facebook} alt="facebook" />
+            </a>
           </div>
         </div>
       </div>

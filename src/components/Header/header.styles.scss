@@ -23,15 +23,19 @@
     margin: auto;
     @extend .display-rules;
 
+    .header-container-menu {
+      display: none;
+    }
+
+    .header-container-logo {
+      height: 100%;
+      width: auto;
+    }
     .header-container-nav {
       height: 55%;
       width: 42%;
       @extend .display-rules;
 
-      .header-container-nav-logo {
-        height: 100%;
-        width: auto;
-      }
       .header-container-nav-link {
         text-decoration: none;
       }
@@ -48,6 +52,28 @@
 
       .header-container-search-icon {
         margin-left: 8%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    .header-container {
+      .header-container-menu {
+        display: inline;
+      }
+      .header-container-nav {
+        display: none;
+      }
+      .header-container-logo {
+        margin: auto;
+      }
+
+      .header-container-search {
+        .header-container-search-text {
+          display: none;
+        }
       }
     }
   }

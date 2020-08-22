@@ -6,7 +6,7 @@ const Card = ({ image, title, date, text }) => {
   return (
     <div className="card">
       <img src={image} alt={title} className="card-image" />
-      <h3 className="card-title">{title || "Card Title"}</h3>
+      <h2 className="card-title">{title || "Card Title"}</h2>
       <span className="card-date">{date || "21/08/2020"}</span>
       <p className="card-text">
         {text ||

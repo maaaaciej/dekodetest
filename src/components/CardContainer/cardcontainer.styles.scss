@@ -24,3 +24,19 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .cardcontainer {
+    width: 100%;
+    margin: 0;
+    .cardcontainer-arrow {
+      display: none;
+    }
+    .cardcontainer-wrapper {
+      overflow-x: auto;
+      .cardcontainer-wrapper-card {
+        width: 42.3%;
+      }
+    }
+  }
+}

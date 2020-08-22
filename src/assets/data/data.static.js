@@ -1,6 +1,5 @@
 // eslint-disable-next-line
 import React from "react";
-
 import avatar from "../avatar/avatar.png";
 
 import image1 from "../card-images/1.svg";
@@ -15,11 +14,12 @@ const data = {
     position: "Projectmanager Dekode",
     readtime: "5",
     date: "2 june",
-    socials: [
-      "https://www.facebook.com/",
-      "https://www.instagram.com/",
-      "https://twitter.com/",
-    ],
+    socials: {
+      Twitter: "https://twitter.com/",
+      Instagram: "https://www.instagram.com/",
+      Facebook: "https://www.facebook.com/",
+    },
+
     avatar: avatar,
   },
 

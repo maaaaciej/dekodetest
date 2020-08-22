@@ -50,6 +50,13 @@
     .header-container-search {
       cursor: pointer;
       @extend .display-rules;
+      input {
+        border-radius: 25px;
+        border: 1px solid global.$main-black;
+        padding: 6px 6px 6px 10px;
+
+        outline: none;
+      }
 
       .header-container-search-icon {
         margin-left: 8%;

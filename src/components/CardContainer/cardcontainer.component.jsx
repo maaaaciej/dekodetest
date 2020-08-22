@@ -15,7 +15,7 @@ const CardContainer = () => {
   //Using the useState-hook to keep track of the current x-offset.
   const [xOffset, setxOffset] = useState(0);
   /*The two functions below calculate the x-offset of the cards, based on the
-  total number of cards given, makingn the component dynamic, as opposed to hardcoding a value.
+  total number of cards given, making the component dynamic, as opposed to hardcoding a value.
   the "123" is the default offset value calculated based on the card width
   once all of the cards have been on screen,  the x-offset resets to the start.  */
   const previousCard = () => {

@@ -8,13 +8,18 @@ import menu from "../../assets/hamburger/menu.svg";
 import "./header.styles.scss";
 
 const Header = () => {
-  const [open, setOpen] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
+  const [openSearchfield, setOpenSearchfield] = useState(false);
   //simple function, that sets the state of the menu to the opposite of what it currently is
-  const toggleMenu = () => (open ? setOpen(false) : setOpen(true));
+  const toggleMenu = () => (openMenu ? setOpenMenu(false) : setOpenMenu(true));
+  const showSearch = () =>
+    openSearchfield ? setOpenSearchfield(true) : setOpenSearchfield(true);
+  const hideSearch = () =>
+    openSearchfield ? setOpenSearchfield(false) : setOpenSearchfield(false);
 
   return (
     <header>
-      <div className="header" style={open ? { boxShadow: "none" } : {}}>
+      <div className="header" style={openMenu ? { boxShadow: "none" } : {}}>
         <div className="header-container">
           <img
             src={menu}
@@ -51,8 +56,17 @@ const Header = () => {
               Triangles
             </a>
           </nav>
-          <span className="header-container-search">
-            <span className="header-container-search-text">Search </span>
+          <span className="header-container-search" onClick={showSearch}>
+            {openSearchfield ? (
+              <input
+                type="text"
+                placeholder="Search"
+                autofocus="true"
+                onBlur={hideSearch}
+              />
+            ) : (
+              <span className="header-container-search-text">Search </span>
+            )}
             <img className="header-container-search-icon" src={search} alt="" />
           </span>
         </div>
@@ -60,7 +74,7 @@ const Header = () => {
       <div
         className="mobile-header"
         //hiding/showing the menu based on the boolean in state
-        style={open ? { display: `flex` } : { display: `none` }}
+        style={openMenu ? { display: `flex` } : { display: `none` }}
       >
         <a
           href="https://dekode.no/"

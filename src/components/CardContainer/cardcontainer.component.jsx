@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Card from "../Card/card.component";
 
@@ -12,20 +12,64 @@ import "./cardcontainer.styles.scss";
 
 const CardContainer = () => {
   const cards = data.cardCarousel;
+  //Using the useState-hook to keep track of the current x-offset.
+  const [xOffset, setxOffset] = useState(0);
+  /*The two functions below calculate the x-offset of the cards, based on the
+  total number of cards given, makingn the component dynamic, as opposed to hardcoding a value.
+  the "123" is the default offset value calculated based on the card width
+  once all of the cards have been on screen,  the x-offset resets to the start.  */
+  const previousCard = () => {
+    xOffset >= 0
+      ? setxOffset(-(cards.length / 3) * 123)
+      : setxOffset(xOffset + 123);
+  };
+  const nextCard = () => {
+    xOffset <= -(cards.length / 3) * 123
+      ? setxOffset(0)
+      : setxOffset(xOffset - 123);
+  };
 
   return (
     <div className="cardcontainer">
-      <img src={left} alt="left arrow" />
-      {cards.map((card, index) => (
-        <Card
-          key={index}
-          image={card.image}
-          title={card.title}
-          date={card.date}
-          text={card.text}
+      {/* in case of there only being 3 cards, we don't render the arrows. */}
+      {cards.length === 3 ? (
+        <div className="empty"></div>
+      ) : (
+        <img
+          onClick={previousCard}
+          className="cardcontainer-arrow"
+          src={left}
+          alt="left arrow"
         />
-      ))}
-      <img src={right} alt="right arrow" />
+      )}
+      <div className="cardcontainer-wrapper">
+        {cards.map((card, index) => (
+          <div
+            key={index}
+            className="cardcontainer-wrapper-card"
+            style={{
+              transform: `translateX(${xOffset}%)`,
+            }}
+          >
+            <Card
+              image={card.image}
+              title={card.title}
+              date={card.date}
+              text={card.text}
+            />
+          </div>
+        ))}
+      </div>
+      {cards.length === 3 ? (
+        <div className="empty"></div>
+      ) : (
+        <img
+          onClick={nextCard}
+          className="cardcontainer-arrow"
+          src={right}
+          alt="right arrow"
+        />
+      )}
     </div>
   );
 };

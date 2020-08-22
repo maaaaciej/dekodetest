@@ -3,4 +3,24 @@
   justify-content: space-evenly;
   margin: 4% auto;
   width: 93%;
+  box-sizing: border-box;
+  .cardcontainer-arrow {
+    cursor: pointer;
+    background-color: #ffffff;
+    z-index: 10;
+  }
+  .cardcontainer-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    min-width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    .cardcontainer-wrapper-card {
+      flex: 0 0 auto;
+      width: 27.4%;
+      margin-left: 6%;
+      transition: 0.9s;
+    }
+  }
 }

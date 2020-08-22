@@ -54,6 +54,7 @@ const data = {
     },
     {
       image: image2,
+
       title: "Lorem ipsum",
       date: "17. august 2020",
       text:
@@ -61,6 +62,53 @@ const data = {
     },
     {
       image: image3,
+
+      title: "Lorem ipsum",
+      date: "17. august 2020",
+      text:
+        "In optics, violet is a spectral color: It refers to the color of any different single wavelength of light on the short wavelength end of the visible spectrum.",
+    },
+    {
+      image: image1,
+      title: "Lorem ipsum",
+      date: "17. august 2020",
+      text:
+        "In optics, violet is a spectral color: It refers to the color of any different single wavelength of light on the short wavelength end of the visible spectrum.",
+    },
+    {
+      image: image2,
+
+      title: "Lorem ipsum",
+      date: "17. august 2020",
+      text:
+        "In optics, violet is a spectral color: It refers to the color of any different single wavelength of light on the short wavelength end of the visible spectrum.",
+    },
+    {
+      image: image3,
+
+      title: "Lorem ipsum",
+      date: "17. august 2020",
+      text:
+        "In optics, violet is a spectral color: It refers to the color of any different single wavelength of light on the short wavelength end of the visible spectrum.",
+    },
+    {
+      image: image1,
+      title: "Lorem ipsum",
+      date: "17. august 2020",
+      text:
+        "In optics, violet is a spectral color: It refers to the color of any different single wavelength of light on the short wavelength end of the visible spectrum.",
+    },
+    {
+      image: image2,
+
+      title: "Lorem ipsum",
+      date: "17. august 2020",
+      text:
+        "In optics, violet is a spectral color: It refers to the color of any different single wavelength of light on the short wavelength end of the visible spectrum.",
+    },
+    {
+      image: image3,
+
       title: "Lorem ipsum",
       date: "17. august 2020",
       text:

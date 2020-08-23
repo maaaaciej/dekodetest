@@ -6,12 +6,14 @@ import twitter from "../../assets/socials/twitter.svg";
 
 import "./profilecard.styles.scss";
 
-const ProfileCard = ({ author }) => {
-  const { avatar, readtime, name, date, position, socials } = author;
+const ProfileCard = ({
+  author: { avatar, readtime, name, date, position, socials },
+}) => {
+  // const { avatar, readtime, name, date, position, socials } = author;
 
   return (
     <div className="profilecard">
-      <img src={avatar} alt={`${name}`} />
+      {avatar ? <img src={avatar} alt={`${name || "avatar"}`} /> : null}
       <div className="profilecard-container">
         <h4 className="profilecard-container-name">{`${name || "Name"}`}</h4>
         <p className="profilecard-container-text">{`${
@@ -31,9 +33,7 @@ const ProfileCard = ({ author }) => {
                 alt=""
               />
             </a>
-          ) : (
-            <></>
-          )}
+          ) : null}
           {socials.Instagram ? (
             <a
               href={socials.Instagram}
@@ -45,9 +45,7 @@ const ProfileCard = ({ author }) => {
                 alt=""
               />
             </a>
-          ) : (
-            <></>
-          )}
+          ) : null}
           {socials.Facebook ? (
             <a
               href={socials.Facebook}
@@ -59,9 +57,7 @@ const ProfileCard = ({ author }) => {
                 alt=""
               />
             </a>
-          ) : (
-            <></>
-          )}
+          ) : null}
         </span>
       </div>
     </div>

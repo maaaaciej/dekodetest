@@ -12,7 +12,7 @@ import data from "../../assets/data/data.static";
 import "./postcontainer.styles.scss";
 
 const PostContainer = () => {
-  const { author, buttonText, head, imageContainer, body } = data;
+  const { author, buttonText, head, imageContainer, body, cardCarousel } = data;
   return (
     <div className="postcontainer">
       <SiteMap />
@@ -34,7 +34,7 @@ const PostContainer = () => {
       <p className="postcontainer-paragraph">{body.secondParagraph}</p>
       <h3 className="postcontainer-title">{body.thirdParagraph.title}</h3>
       <p className="postcontainer-paragraph">{body.thirdParagraph.text}</p>
-      <CardContainer />
+      <CardContainer cards={cardCarousel} />
       <h3 className="postcontainer-title">{body.fourthParagraph.title}</h3>
       <p className="postcontainer-paragraph">{body.fourthParagraph.text}</p>
       <div className="postcontainer-button">

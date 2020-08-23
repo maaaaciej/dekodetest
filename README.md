@@ -14,7 +14,7 @@ The three questions go as follows:
 
 1. What are the benefits of using React?
 2. Are there any drawbacks of using React?
-   a. How could those drawbacks be improved?
+   - How could those drawbacks be improved?
 
 The benefits of using React are many. Listing all of the obvious ones would take more time than necessary, so I choose to instead focus on the thing that make me appreciate React more for each line of JSX that i write. There are however drawbacks to any technology out there, which I will also discuss here.
 
@@ -46,9 +46,14 @@ To run and test the application, start by installing all of the dependencies wit
 
 - Use <b>npm test</b> to run the tests written for the application.
 
-The application uses the following dependencies:
+The application uses the following dependencies (in addition to the ones shipped with CRA):
 
 - Sass
+
+  - Using Sass makes writing CSS easier and more DRY.
+
+- Enzyme & Enzyme Adapter
+  - Ui testing library
 
 ### The philosophy behind it all
 
@@ -75,6 +80,9 @@ Again, in another project, with more logic involved, this would have been a bigg
 ### Testing
 
 viktigheten - etter samtale
+skrev enkle tester
+snapshottesting
+noe å jobbe mer med
 
 ### Component Overview
 
@@ -109,5 +117,6 @@ The overview below briefly discusses each component, as well as mentions any giv
 css animations og css generelt
 enda bedre planlegging
 small commits
+testing
 
 ### Summary

@@ -5,6 +5,8 @@ import logo from "../../assets/logo/logo.svg";
 import search from "../../assets/search/search.svg";
 import menu from "../../assets/hamburger/menu.svg";
 
+import MobileMenu from "../MobileMenu/mobilemenu.component";
+
 import "./header.styles.scss";
 
 const Header = () => {
@@ -71,36 +73,8 @@ const Header = () => {
           </span>
         </div>
       </div>
-      <div
-        className="mobile-header"
-        //hiding/showing the menu based on the boolean in state
-        style={openMenu ? { display: `flex` } : { display: `none` }}
-      >
-        <a
-          href="https://dekode.no/"
-          rel="noopener noreferrer"
-          target="_blank"
-          className="mobile-header-link"
-        >
-          Circles
-        </a>
-        <a
-          href="https://dekode.no/"
-          rel="noopener noreferrer"
-          target="_blank"
-          className="mobile-header-link"
-        >
-          Squares
-        </a>
-        <a
-          href="https://dekode.no/"
-          rel="noopener noreferrer"
-          target="_blank"
-          className="mobile-header-link"
-        >
-          Triangles
-        </a>
-      </div>
+      {/* Rendering the mobile menu based on the boolean in state */}
+      {openMenu ? <MobileMenu /> : null}
     </header>
   );
 };

@@ -6,12 +6,10 @@ import left from "../../assets/arrows/left.svg";
 import right from "../../assets/arrows/right.svg";
 
 //All of the information given in the wireframe
-import data from "../../assets/data/data.static";
 
 import "./cardcontainer.styles.scss";
 
-const CardContainer = () => {
-  const cards = data.cardCarousel;
+const CardContainer = ({ cards }) => {
   //Using the useState-hook to keep track of the current x-offset.
   const [xOffset, setxOffset] = useState(0);
   /*The two functions below calculate the x-offset of the cards, based on the
@@ -38,6 +36,7 @@ const CardContainer = () => {
         <img
           onClick={previousCard}
           className="cardcontainer-arrow"
+          id="left-arrow"
           src={left}
           alt="left arrow"
         />
@@ -65,6 +64,7 @@ const CardContainer = () => {
       ) : (
         <img
           onClick={nextCard}
+          id="right-arrow"
           className="cardcontainer-arrow"
           src={right}
           alt="right arrow"

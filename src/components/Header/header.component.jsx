@@ -14,13 +14,12 @@ const Header = () => {
   const [openSearchfield, setOpenSearchfield] = useState(false);
   //simple function, that sets the state of the menu to the opposite of what it currently is
   const toggleMenu = () => (openMenu ? setOpenMenu(false) : setOpenMenu(true));
-  const showSearch = () =>
-    openSearchfield ? setOpenSearchfield(true) : setOpenSearchfield(true);
-  const hideSearch = () =>
-    openSearchfield ? setOpenSearchfield(false) : setOpenSearchfield(false);
+  const showSearch = () => setOpenSearchfield(true);
+  const hideSearch = () => setOpenSearchfield(false);
 
   return (
     <header>
+      {/* Hides the box shadown when the menu is open */}
       <div className="header" style={openMenu ? { boxShadow: "none" } : {}}>
         <div className="header-container">
           <img
@@ -62,7 +61,7 @@ const Header = () => {
           <span className="header-container-search" onClick={showSearch}>
             {openSearchfield ? (
               <input
-                type="text"
+                type="search"
                 placeholder="Search"
                 autofocus="true"
                 onBlur={hideSearch}

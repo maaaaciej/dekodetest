@@ -15,7 +15,7 @@ const SiteMap = () => {
       <a href="https://www.dekode.no" className="sitemap-link">
         Circles
       </a>
-      <img src={forward} alt="" />
+      <img src={forward} alt="forward arrow" />
 
       <span className="sitemap-current">Purple Circles</span>
     </div>

@@ -5,8 +5,6 @@ import Card from "../Card/card.component";
 import left from "../../assets/arrows/left.svg";
 import right from "../../assets/arrows/right.svg";
 
-//All of the information given in the wireframe
-
 import "./cardcontainer.styles.scss";
 
 const CardContainer = ({ cards }) => {
@@ -30,9 +28,7 @@ const CardContainer = ({ cards }) => {
   return (
     <div className="cardcontainer">
       {/* in case of there only being 3 cards, we don't render the arrows. */}
-      {cards.length === 3 ? (
-        <div className="empty"></div>
-      ) : (
+      {cards.length <= 3 ? null : (
         <img
           onClick={previousCard}
           className="cardcontainer-arrow"
@@ -59,9 +55,7 @@ const CardContainer = ({ cards }) => {
           </div>
         ))}
       </div>
-      {cards.length === 3 ? (
-        <div className="empty"></div>
-      ) : (
+      {cards.length <= 3 ? null : (
         <img
           onClick={nextCard}
           id="right-arrow"

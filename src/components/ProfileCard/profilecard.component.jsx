@@ -7,10 +7,15 @@ import twitter from "../../assets/socials/twitter.svg";
 import "./profilecard.styles.scss";
 
 const ProfileCard = ({
-  author: { avatar, readtime, name, date, position, socials },
+  author: {
+    avatar,
+    readtime,
+    name,
+    date,
+    position,
+    socials: { Facebook, Instagram, Twitter },
+  },
 }) => {
-  // const { avatar, readtime, name, date, position, socials } = author;
-
   return (
     <div className="profilecard">
       {avatar ? <img src={avatar} alt={`${name || "avatar"}`} /> : null}
@@ -22,11 +27,8 @@ const ProfileCard = ({
 
         <span className="profilecard-container-socials">
           {/* The three expressions below conditionally render the social media icons, based on wether or not the links are provided */}
-          {socials.Twitter ? (
-            <a
-              href={socials.Twitter}
-              className="profilecard-container-socials-link"
-            >
+          {Twitter ? (
+            <a href={Twitter} className="profilecard-container-socials-link">
               <img
                 className="profilecard-container-socials-link-icon"
                 src={twitter}
@@ -34,11 +36,8 @@ const ProfileCard = ({
               />
             </a>
           ) : null}
-          {socials.Instagram ? (
-            <a
-              href={socials.Instagram}
-              className="profilecard-container-socials-link"
-            >
+          {Instagram ? (
+            <a href={Instagram} className="profilecard-container-socials-link">
               <img
                 className="profilecard-container-socials-link-icon"
                 src={instagram}
@@ -46,11 +45,8 @@ const ProfileCard = ({
               />
             </a>
           ) : null}
-          {socials.Facebook ? (
-            <a
-              href={socials.Facebook}
-              className="profilecard-container-socials-link"
-            >
+          {Facebook ? (
+            <a href={Facebook} className="profilecard-container-socials-link">
               <img
                 className="profilecard-container-socials-link-icon"
                 src={facebook}

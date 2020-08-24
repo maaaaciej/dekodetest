@@ -32,10 +32,10 @@ const PostContainer = () => {
         caption={imageContainer.caption}
       />
       <p className="postcontainer-paragraph">{body.secondParagraph}</p>
-      <h3 className="postcontainer-title">{body.thirdParagraph.title}</h3>
+      <h2 className="postcontainer-title">{body.thirdParagraph.title}</h2>
       <p className="postcontainer-paragraph">{body.thirdParagraph.text}</p>
       <CardContainer cards={cardCarousel} />
-      <h3 className="postcontainer-title">{body.fourthParagraph.title}</h3>
+      <h2 className="postcontainer-title">{body.fourthParagraph.title}</h2>
       <p className="postcontainer-paragraph">{body.fourthParagraph.text}</p>
       <div className="postcontainer-button">
         <Button buttonText={buttonText} />

@@ -11,14 +11,24 @@
   align-items: center;
   align-content: space-between;
   justify-content: center;
+
+  .profilecard-avatar {
+    height: 5.5rem;
+    width: 5.5rem;
+    border-radius: 50px;
+    object-fit: cover;
+  }
+
   .profilecard-container {
     margin-left: 2%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+
     .profilecard-container-name {
       color: global.$main-purple;
+      font-weight: 500;
       font-size: 1.2em;
       margin: 0;
     }
@@ -37,7 +47,7 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .profilecard {
     display: none;
   }

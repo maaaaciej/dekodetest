@@ -3,18 +3,15 @@
 @use "../../index.scss" as global;
 
 .postcontainer {
-  font-family: Circular Std Book;
   color: global.$main-black;
   margin-bottom: 3%;
   .postcontainer-paragraph {
     width: 42%;
-    padding: 1.5% 0% 3% 0%;
     line-height: 32px;
     font-size: 1.2rem;
     margin: 2% auto;
 
     a {
-      font-family: Circular Std Book;
       text-decoration: underline;
       color: global.$main-purple;
     }
@@ -25,7 +22,8 @@
   .postcontainer-title {
     width: 42%;
     margin: auto;
-    font-size: 1.4rem;
+    font-size: 2em;
+    font-weight: 500;
   }
 
   .postcontainer-button {
@@ -34,10 +32,18 @@
 }
 @media only screen and (max-width: 900px) {
   .postcontainer {
-    .postcontainer-paragraph,
+    margin-bottom: 3rem;
+    .postcontainer-paragraph {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin: 5% auto;
+      width: 90%;
+    }
     .postcontainer-title {
       margin: 5% auto;
       width: 90%;
+      font-size: 1.5rem;
+      line-height: 2rem;
     }
   }
 }

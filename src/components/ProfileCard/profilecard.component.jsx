@@ -18,7 +18,13 @@ const ProfileCard = ({
 }) => {
   return (
     <div className="profilecard">
-      {avatar ? <img src={avatar} alt={`${name || "avatar"}`} /> : null}
+      {avatar ? (
+        <img
+          className="profilecard-avatar"
+          src={avatar}
+          alt={`${name || "avatar"}`}
+        />
+      ) : null}
       <div className="profilecard-container">
         <h4 className="profilecard-container-name">{`${name || "Name"}`}</h4>
         <p className="profilecard-container-text">{`${

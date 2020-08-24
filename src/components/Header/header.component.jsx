@@ -58,19 +58,19 @@ const Header = () => {
               Triangles
             </a>
           </nav>
-          <span className="header-container-search" onClick={showSearch}>
+          <div className="header-container-search" onClick={showSearch}>
             {openSearchfield ? (
               <input
                 type="search"
                 placeholder="Search"
-                autofocus="true"
+                autoFocus={true}
                 onBlur={hideSearch}
               />
             ) : (
               <span className="header-container-search-text">Search </span>
             )}
             <img className="header-container-search-icon" src={search} alt="" />
-          </span>
+          </div>
         </div>
       </div>
       {/* Rendering the mobile menu based on the boolean in state */}

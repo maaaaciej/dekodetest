@@ -25,17 +25,18 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .cardcontainer {
     width: 100%;
-    margin: 0;
+
+    margin: 5rem 0;
     .cardcontainer-arrow {
       display: none;
     }
     .cardcontainer-wrapper {
       overflow-x: auto;
       .cardcontainer-wrapper-card {
-        width: 42.3%;
+        min-width: 40%;
       }
     }
   }

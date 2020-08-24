@@ -26,6 +26,7 @@ const Header = () => {
           <img
             src={menu}
             alt=""
+            id="mobile-menu"
             className="header-container-menu"
             onClick={toggleMenu}
           />

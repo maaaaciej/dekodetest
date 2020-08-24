@@ -182,3 +182,6 @@ There are a few things i struggled with and learned about myself when doing this
 
 - Testing
   - Testing is, as mentioned in its own section, something I have not given enough attention to, that I definitely see the whole value of now, and want to improve on. Test-driven development is one of the better choices for stability, scalability and a better workflow, and is something I want to improve on and learn more about.
+  
+- Asking for the font
+  - I spent way too much time on trying to find the correct font from the design document, and in retrospect, should have just asked you for it.

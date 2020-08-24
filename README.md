@@ -7,7 +7,7 @@
 - [Introduction](#introduction)
   - [A few words about React](#a-few-words-about-react)
     - [Benefits](#benefits)
-    - [Drawbacks & Remedies](#drawbacks---remedies)
+    - [Drawbacks & Remedies](#drawbacks-and-remedies)
 - [The application](#the-application)
   - [Set up instructions](#set-up-instructions)
   - [The philosophy](#the-philosophy)
@@ -51,7 +51,7 @@ Another aspect of React that I appreciate a lot is it's modularity. Writing reus
 
 The last benefit I want to touch upon, in fear of making this too long, is the fast performance, combined with only reloading changes in components, instead of the whole page. Sacrificing some time on initial load for instant responses later is in many cases a good tradeoff to make.
 
-#### Drawbacks & Remedies
+#### Drawbacks and Remedies
 
 The last of the benefits I mentioned, can also be a big drawback when using React. React, being a SPA, can have a much slower initial load compared to traditional websites, as it has to execute all of the JS before hydrating the DOM. This can be improved upon in several different ways, for instance code-splitting and lazy-loading, where the code is split based on whatever fits the application, and chunks are loaded only when they are needed.
 

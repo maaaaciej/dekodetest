@@ -1,29 +1,31 @@
 # Take home test by Maciej Ostrowski for Dekode
 
 <hr>
+
 ## Table of Contents
- * [Introduction](#introduction)
-    + [A few words about React](#a-few-words-about-react)
-      - [Benefits](#benefits)
-      - [Drawbacks & Remedies](#drawbacks---remedies)
-  * [The application](#the-application)
-    + [Set up instructions](#set-up-instructions)
-    + [The philosophy](#the-philosophy)
-      - [Modularity](#modularity)
-      - [Readability](#readability)
-      - [Scalability](#scalability)
-    + [Testing](#testing)
-    + [Component Overview](#component-overview)
-      - [Button](#button)
-      - [Card](#card)
-      - [CardContainer](#cardcontainer)
-      - [Footer](#footer)
-      - [Header](#header)
-      - [ImageContainer](#imagecontainer)
-      - [ProfileCard](#profilecard)
-      - [TitleContainer](#titlecontainer)
-      - [Post Container](#post-container)
-    + [Personal Areas of Improvement](#personal-areas-of-improvement)
+
+- [Introduction](#introduction)
+  - [A few words about React](#a-few-words-about-react)
+    - [Benefits](#benefits)
+    - [Drawbacks & Remedies](#drawbacks---remedies)
+- [The application](#the-application)
+  - [Set up instructions](#set-up-instructions)
+  - [The philosophy](#the-philosophy)
+    - [Modularity](#modularity)
+    - [Readability](#readability)
+    - [Scalability](#scalability)
+  - [Testing](#testing)
+  - [Component Overview](#component-overview)
+    - [Button](#button)
+    - [Card](#card)
+    - [CardContainer](#cardcontainer)
+    - [Footer](#footer)
+    - [Header](#header)
+    - [ImageContainer](#imagecontainer)
+    - [ProfileCard](#profilecard)
+    - [TitleContainer](#titlecontainer)
+    - [Post Container](#post-container)
+  - [Personal Areas of Improvement](#personal-areas-of-improvement)
 
 ## Introduction
 

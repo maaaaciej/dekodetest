@@ -174,11 +174,11 @@ There are a few things i struggled with and learned about myself when doing this
 
 - CSS in general
 
-  - I wouldn't say that I struggled much with CSS, but I can definitely improve when it comes to especially and elements overlays.
+  - I wouldn't say that I struggled much with CSS, but I can definitely improve when it comes to element overlays, and some other things as well.
 
 - Better planning
 
   - I pride myself on being a good planner, but it is definitely something I can furhter improve on. This relates to both planning more in advance, and having a clearer picture of how I want to acomplish something, but also on a smaller scale, for instance when commiting code, to plan ahead what I want to commit, instead of, for example, a tiny commit that could have waited, or one too large, that makes rollbacks a pain.
 
 - Testing
-  - Testing is, as mentioned in its own section, something I have not given enough attention two, that I definitely see the whole value of now, and want to improve on. Test-driven development is one of the better choices for stability, scalability and a better workflow, and is something I want to improve on and learn more about.
+  - Testing is, as mentioned in its own section, something I have not given enough attention to, that I definitely see the whole value of now, and want to improve on. Test-driven development is one of the better choices for stability, scalability and a better workflow, and is something I want to improve on and learn more about.

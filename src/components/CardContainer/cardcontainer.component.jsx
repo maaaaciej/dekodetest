@@ -29,13 +29,14 @@ const CardContainer = ({ cards }) => {
     <div className="cardcontainer">
       {/* in case of there only being 3 cards, we don't render the arrows. */}
       {cards.length <= 3 ? null : (
-        <img
-          onClick={previousCard}
-          className="cardcontainer-arrow"
-          id="left-arrow"
-          src={left}
-          alt="left arrow"
-        />
+        <div className="cardcontainer-arrow">
+          <img
+            onClick={previousCard}
+            id="left-arrow"
+            src={left}
+            alt="left arrow"
+          />
+        </div>
       )}
       <div className="cardcontainer-wrapper">
         {cards.map((card, index) => (
@@ -56,13 +57,14 @@ const CardContainer = ({ cards }) => {
         ))}
       </div>
       {cards.length <= 3 ? null : (
-        <img
-          onClick={nextCard}
-          id="right-arrow"
-          className="cardcontainer-arrow"
-          src={right}
-          alt="right arrow"
-        />
+        <div className="cardcontainer-arrow">
+          <img
+            onClick={nextCard}
+            id="right-arrow"
+            src={right}
+            alt="right arrow"
+          />
+        </div>
       )}
     </div>
   );
